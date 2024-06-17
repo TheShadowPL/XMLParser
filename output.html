@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <title>Wygenerowane Dane</title>
+        <script src=""></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+        <style>
+                    body {
+                    min-height: 100vh;
+                    background-color: #FFE53B;
+                    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 100%);
+                    }
+                </style>
+    </head>
+    <body>
+        <div class="container py-5">
+            <header class="text-center text-white">
+                <h1 class="display-4">XML Datatables</h1>
+            </header>
+            <div class="row py-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="card rounded shadow border-0">
+                        <div class="card-body p-5 bg-white rounded">
+                            <div class="table-responsive">
+                                <table id="example" style="width:100%" class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th><th>Data</th><th>Organizacja</th><th>Komponent Środowiska</th><th>Typ Karty</th><th>Rodzaj Karty</th><th>Nr Wpisu</th><th>Znak Sprawy</th><th>Link</th><th>Nazwa Wnioskodawcy</th><th>Ulica</th><th>Miejscowość</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="table-body">
+                                        <tr>
+                                            <td>GKM_NT000AFBA2</td><td>2012-11-22</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>417</td><td>GKM-VII.6233.1.42.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AFBA2&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Przedsiębiorstwo Usług Komunalno-Transportowych NITOM Danuta Nowacka</td><td>ANTONIEGO KOSIŃSKIEGO 25/7</td><td>61-521 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AFD12</td><td>2012-08-14</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>437</td><td>GKM-VII.6233.1.52.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AFD12&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Przedsiębiorstwo Usługowo-Transportowe Altrans Andrzej Lenarczyk</td><td>IGNACEGO DOBROGOJSKIEGO 21/2</td><td>61-692 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AFD1E</td><td>2012-08-10</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>439</td><td>GKM-VII.6233.1.51.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AFD1E&amp;typ_karty=A&amp;api=xml">Link</a></td><td>TEW Gospodarowanie Odpadami Sp. z o.o</td><td>SZOSA BYTOMSKA 1</td><td>67-100 KIEŁCZ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AFCEA</td><td>2012-07-31</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>429</td><td>GKM-VII.6233.1.50.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AFCEA&amp;typ_karty=A&amp;api=xml">Link</a></td><td>WIP-TRANS Wiesław Tyll</td><td>UROCZA 10</td><td>61-601 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AFBCA</td><td>2012-07-30</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>427</td><td>GKM-VII.6233.1.49.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AFBCA&amp;typ_karty=A&amp;api=xml">Link</a></td><td>RAJ-TRANS Rajmund Tulecki</td><td>Adam Tulecki s.c.</td><td>SYN&Oacute;W PUŁKU 23, 60-462 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AFCF2</td><td>2012-07-25</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>431</td><td>GKM-VII.6233.1.48.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AFCF2&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Zakład Zagospodarowania Odpad&oacute;w w Poznaniu Sp. z o.o</td><td>ALEJE KAROLA MARCINKOWSKIEGO 11</td><td>61-827 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AFBBA</td><td>2012-07-25</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>423</td><td>GKM-VII.6233.1.47.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AFBBA&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Usługi Komunalno Transportowe Ślusarsko-Instalacyjne Krzysztof Drzazga</td><td>SOBOTECKA 27a</td><td>60-161 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AFBB2</td><td>2012-07-23</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>421</td><td>GKM-VII.6233.1.44.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AFBB2&amp;typ_karty=A&amp;api=xml">Link</a></td><td>MAT-KOM Andrzej Materna</td><td>POWSTAŃC&Oacute;W WIELKOPOLSKICH 79</td><td>62-031 LUBOŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AFBAA</td><td>2012-07-23</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>419</td><td>GKM-VII.6233.1.45.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AFBAA&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Transport Ciężarowy Marian Borski</td><td>OS.STEFANA BATOREGO 24/10</td><td>61-687 POZNAN</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AFBC2</td><td>2012-07-20</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>425</td><td>GKM-VII.6233.1.46.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AFBC2&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Transport Ciężarowy Piotr Maciejewski</td><td>WARSZAWSKA 82/28</td><td>61-031 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AFCFE</td><td>2012-07-19</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>433</td><td>GKM-VII.6233.1.43.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AFCFE&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Transport Ciężarowy Karol Surma</td><td>KORONNA 7/9</td><td>60-652 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AFD06</td><td>2012-07-12</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>435</td><td>GKM-VII.6233.1.41.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AFD06&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Tomex Tomasz Krupiński</td><td>OSIEDLE PRZYJAŹNI 11D</td><td>61-685 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AFB96</td><td>2012-07-10</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>415</td><td>GKM-VII.6233.1.40.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AFB96&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Przedsiębiorstwo Handlowo-Usługowe JAWI Sp. z o.o</td><td>BORANTA 6</td><td>61-608 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AFB8A</td><td>2012-07-09</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>413</td><td>GKM-VII.6233.1.37.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AFB8A&amp;typ_karty=A&amp;api=xml">Link</a></td><td>First Recycling Poznań Sp. z o.o</td><td>GDYŃSKA 131</td><td>62-004 CZERWONAK</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AFB82</td><td>2012-06-27</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>411</td><td>GKM-VII.6233.1.36.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AFB82&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Usługi Transportowe Mirosław Kłosiński</td><td>FALISTA 6/64</td><td>61-249 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AFB7A</td><td>2012-06-27</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>409</td><td>GKM-VII.6233.1.35.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AFB7A&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Publiczny Transport Ciężarowy Zdzisław Kołodziejczak</td><td>OSIEDLE PIASTOWSKIE 36/53</td><td>61-151 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AFB72</td><td>2012-06-27</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>407</td><td>GKM-VII.6233.1.34.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AFB72&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Zakład Konserwacji Zieleni BONSAI s.c.</td><td>NARAMOWICKA 314</td><td>61-601 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AFB6A</td><td>2012-06-20</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>405</td><td>GKM-VII.6233.1.33.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AFB6A&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Zakłady Usługowe Zach&oacute;d Sp. z o. o.</td><td>KOLEJOWA 23</td><td>60-717 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AFB62</td><td>2012-06-06</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>403</td><td>GKM-VII.6233.1.32.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AFB62&amp;typ_karty=A&amp;api=xml">Link</a></td><td>KDS Sp. z o.o</td><td>P&Oacute;ŁNOCNA 1</td><td>61-719 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AFB56</td><td>2012-06-06</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>401</td><td>GKM-VII.6233.1.31.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AFB56&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Alkom Sp. z o.o</td><td>P&Oacute;ŁNOCNA 1</td><td>61-719 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AFB4E</td><td>2012-06-06</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>399</td><td>GKM-VII.6233.1.30.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AFB4E&amp;typ_karty=A&amp;api=xml">Link</a></td><td>ALKOM Firma Handlowo-Usługowa Henryk Sienkiewicz</td><td>FALISTA 6/1</td><td>61-249 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AD70A</td><td>2012-06-05</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>397</td><td>GKM-VII.6233.1.29.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AD70A&amp;typ_karty=A&amp;api=xml">Link</a></td><td>UL-POL Usługi Transportowe Wyw&oacute;z Nieczystości Komunalnych Paweł Fengler</td><td>WISŁOCKA 8A/2</td><td>60-406 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AD6FE</td><td>2012-05-30</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>395</td><td>GKM-VII.6233.1.28.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AD6FE&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Transport Ciężarowy Dariusz Ghayour</td><td>KOMORNICKA 20</td><td>60-101 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AD6E6</td><td>2012-05-28</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>391</td><td>GKM-VII.6233.1.26.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AD6E6&amp;typ_karty=A&amp;api=xml">Link</a></td><td>ANDA Przedsiębiorstwo Wielobranżowe</td><td>SPOKOJNA 20</td><td>62-020 SWARZĘDZ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AD6DE</td><td>2012-05-28</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>389</td><td>GKM-VII.6233.1.27.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AD6DE&amp;typ_karty=A&amp;api=xml">Link</a></td><td>SAN-EKO Zakład Usług Komunalnych Krzysztof Skoczylas</td><td>J&Oacute;ZEFA ŁUKASZEWICZA 37A/1</td><td>60-729 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AD6D6</td><td>2012-05-21</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>387</td><td>GKM-VII.6233.1.23.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AD6D6&amp;typ_karty=A&amp;api=xml">Link</a></td><td>KOMTRAW Zakład Usług Komunalnych Kamil Grzesiewicz</td><td>KR&Oacute;LEWNY ŚNIEŻKI 11</td><td>60-183 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AD6CE</td><td>2012-05-21</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>385</td><td>GKM-VII.6233.1.24.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AD6CE&amp;typ_karty=A&amp;api=xml">Link</a></td><td>ROMI Zakład Usług Komunalnych Roman Grzesiewicz</td><td>MARIANA LANGIEWICZA 18/1</td><td>61-502 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AD6F2</td><td>2012-05-18</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>393</td><td>GKM-VII.6233.1.25.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AD6F2&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Zakład Gospodarki Komunalnej Suchy Las Sp. z o.o</td><td>MŁODZIEŻOWA 1</td><td>62-002 SUCHY LAS</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AD6A2</td><td>2012-05-15</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>375</td><td>GKM-VII.6233.1.16.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AD6A2&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Przedsiębiorstwo Komunalno-Transportowe ORDO Marek Friebe</td><td>GDYŃSKA 131</td><td>62-004 CZERWONAK</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AD69A</td><td>2012-05-15</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>373</td><td>GKM-VII.6233.1.18.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AD69A&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Przedsiębiorstwo Usług Komunalno-Transportowych ORDO Lucyna Friebe</td><td>LEŚNA 4</td><td>62-005 PROMNICE</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AD692</td><td>2012-05-15</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>371</td><td>GKM-VII.6233.1.20.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AD692&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Przedsiębiorstwo-Usługowe ECOR Paweł Friebe</td><td>GDYŃSKA 131</td><td>62-004 CZERWONAK</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AD6B2</td><td>2012-05-14</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>379</td><td>GKM-VII.6233.1.17.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AD6B2&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Technika Sanitarna Sp. z o.o</td><td>7B</td><td>60-476 JASIELSKA</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AD6AA</td><td>2012-05-11</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>377</td><td>GKM-VII.6233.1.19.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AD6AA&amp;typ_karty=A&amp;api=xml">Link</a></td><td>EKO-TOM S.J Turguła</td><td>RUMIANKOWA 11</td><td>61-680 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AD6C6</td><td>2012-05-10</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>383</td><td>GKM-VII.6233.1.22.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AD6C6&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Grupa ASTRA Plus Sp. z o.o</td><td>MŚCIBORA 88</td><td>61-062 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AD6BE</td><td>2012-04-26</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>381</td><td>GKM-VII.6233.1.21.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AD6BE&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Przedsiębiorstwo Usług Komunalnych TRANS-KOM Sp. z o.o</td><td>DOJAZD 30</td><td>60-631 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AD68A</td><td>2012-04-26</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>370</td><td>GKM-VII.6233.1.15.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AD68A&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Przedsiębiorstwo Usług Komunalnych TRANS-KOM Sp. z o.o</td><td>DOJAZD 30</td><td>60-631 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AD67E</td><td>2012-04-24</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>368</td><td>GKM-VII.6233.1.14.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AD67E&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Przedsiębiorstwo Wielobranżowe LS - PLUS Sp&oacute;łka z o.o</td><td>SZAŁWIOWA 34a/2</td><td>62-064 PLEWISKA</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AD676</td><td>2012-04-17</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>366</td><td>GKM-VII.6233.1.12.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AD676&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Zakład Sprzątania Plac&oacute;w i Ulic Mielczarek</td><td>Sobański s. j.</td><td>JASIELSKA 7B, 60-476 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AD66A</td><td>2012-04-10</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>364</td><td>GKM-VII.6233.1.11.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AD66A&amp;typ_karty=A&amp;api=xml">Link</a></td><td>ZUZPER RECYKLING Agnieszka Zarabska</td><td>ULIM 66D</td><td>66-446 DESZCZNO</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AD662</td><td>2012-03-23</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>363</td><td>GKM-VII.6233.1.10.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AD662&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Grupa ASTRA Plus Sp. z o.o</td><td>MŚCIBORA 88</td><td>61-062 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000AD656</td><td>2012-03-09</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>361</td><td>GKM-VII.6233.1.9.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000AD656&amp;typ_karty=A&amp;api=xml">Link</a></td><td>TRANSMOS Monika Szatybełko</td><td>OSIEDLE WŁADYSŁAWA JAGIEŁŁY 12k/136</td><td>60-694 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000ACACA</td><td>2012-02-16</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>359</td><td>GKM-VII.6233.1.8.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000ACACA&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Remondis Sanitech Sp. z o.o</td><td>G&Oacute;RECKA 104</td><td>61-483 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000ACABE</td><td>2012-02-14</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>357</td><td>GKM-VII.6233.1.7.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000ACABE&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Niko-Tech Błażej Przynoga</td><td>DŁUGA 22/2</td><td>64-300 NOWY TOMYŚL</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000ACAB2</td><td>2012-02-14</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>355</td><td>GKM-VII.6233.1.6.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000ACAB2&amp;typ_karty=A&amp;api=xml">Link</a></td><td>PAWEKO Paweł Stanisławski</td><td>TARNOWA 14</td><td>62-740 TULISZK&Oacute;W</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000ACAAA</td><td>2012-02-10</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>353</td><td>GKM-VII.6233.1.5.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000ACAAA&amp;typ_karty=A&amp;api=xml">Link</a></td><td>EKO-ZEN Wyw&oacute;z Nieczystości Stałych Rafał Strugalski</td><td>OSIEDLE STARE ŻEGRZE 44/4</td><td>61-249 POZNAŃ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000ACA96</td><td>2012-01-30</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>349</td><td>GKM-VII.6233.1.4.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000ACA96&amp;typ_karty=A&amp;api=xml">Link</a></td><td>Firma Handlowo-Usługowa LUKTRANS</td><td>KONIKOWO 10-12</td><td>62-200 GNIEZNO</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GKM_NT000ACAA2</td><td>2012-01-27</td><td>WGKiM</td><td>odpady komunalne</td><td>A</td><td>inne wnioski</td><td>351</td><td>GKM-VII.6233.1.5.2012</td><td><a href="https://bip.poznan.pl/bip/karty_informacyjne.html?co=print&amp;noteid=GKM_NT000ACAA2&amp;typ_karty=A&amp;api=xml">Link</a></td><td>EKO-ZEN Wyw&oacute;z Nieczystości Stałych Rafał Strugalski</td><td>OSIEDLE STARE ŻEGRZE 44/4</td><td>61-249 POZNAŃ</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+                    $(function() {
+                    $(document).ready(function() {
+                    $('#example').DataTable();
+                    });
+                    });
+                </script><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script><script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script><script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    </body>
+</html>
